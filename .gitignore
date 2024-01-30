@@ -32,3 +32,4 @@ data-coverage_files/
 .cache/
 .jupyter_cache/
 !devcontainer.json
+.venv/
