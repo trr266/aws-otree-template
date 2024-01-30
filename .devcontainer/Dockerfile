@@ -4,6 +4,10 @@ FROM python:3.12-slim
 
 ENV APP_DIR /app
 
-RUN pip install otree
+RUN apt-get update && \
+    apt-get install -y git && \
+    pip install otree
 
-CMD ["otree", "prodserver", "8000"]
+COPY src .
+
+CMD ["otree", "prodserver", "src", "8000"]
