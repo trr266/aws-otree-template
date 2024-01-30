@@ -1,0 +1,9 @@
+---
+##########################
+## Hadolint config file ##
+##########################
+ignored:
+  - DL3008 # Ignore version pinning
+  - DL3002
+  - DL3045
+  - DL3009
