@@ -1,0 +1,22 @@
+{
+	"name": "oTree Docker Container",
+// 	"build": {
+// 		"dockerfile": "Dockerfile",
+// 		"context": "..",
+// 	},
+// 	use image instead of rebuilding everytime
+	"image": "ghcr.io/trr266/aws-otree-template:main",
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"terminal.integrated.fontFamily": "monospace",
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"GitHub.copilot"
+	],
+	
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// "onCreateCommand": "julia --project=docs startup_julia.jl"
+}

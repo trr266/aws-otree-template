@@ -31,3 +31,4 @@ data-coverage_files/
 *.ipynb
 .cache/
 .jupyter_cache/
+!devcontainer.json
