@@ -33,3 +33,5 @@ data-coverage_files/
 .jupyter_cache/
 !devcontainer.json
 .venv/
+*.sqlite3
+*.pyc
