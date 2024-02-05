@@ -26,7 +26,6 @@ site_libs/
 index_files/
 data-collection_files/
 data-coverage_files/
-*.html
 *.json
 *.ipynb
 .cache/
