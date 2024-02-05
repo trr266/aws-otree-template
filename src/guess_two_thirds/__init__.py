@@ -14,7 +14,7 @@ class C(BaseConstants):
     NUM_ROUNDS = 3
     NAME_IN_URL = 'guess_two_thirds'
     JACKPOT = cu(100)
-    GUESS_MAX = 100
+    GUESS_MAX = 200
 
 
 class Subsession(BaseSubsession):
