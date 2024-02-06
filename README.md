@@ -6,6 +6,10 @@ Template for deploying oTree to AWS
 
 Uses template code from https://github.com/oTree-org/oTree, uses oTree.
 
+## Contributors
+
+- Timnah Weckner
+- Fabian Kalife
 
 ## Citations
 
