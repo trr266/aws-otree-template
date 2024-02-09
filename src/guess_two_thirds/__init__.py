@@ -29,7 +29,7 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     guess = models.IntegerField(
-        min=0, max=C.GUESS_MAX, label="Please pick a number from 0 to 100:"
+        min=0, max=C.GUESS_MAX, label=f"Please pick a number from 0 to {C.GUESS_MAX}:"
     )
     is_winner = models.BooleanField(initial=False)
 
