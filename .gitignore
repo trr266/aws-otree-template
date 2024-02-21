@@ -17,15 +17,9 @@ deps/src/
 docs/build/
 docs/site/
 
-*.csv
-!esef_mandate_overview.csv
-
-esef_oxigraph_data/
-
 site_libs/
 index_files/
-data-collection_files/
-data-coverage_files/
+
 *.json
 *.ipynb
 .cache/
