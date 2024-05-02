@@ -7,7 +7,7 @@ SESSION_CONFIGS = [
     dict(
         name='guess_two_thirds',
         display_name="Guess 2/3 of the Average",
-        app_sequence=['src/guess_two_thirds'],
+        app_sequence=['guess_two_thirds'],
         num_demo_participants=3,
     ),
 ]
