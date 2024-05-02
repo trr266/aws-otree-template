@@ -2,6 +2,8 @@ FROM python:3.11-slim
 
 # This is based on https://github.com/trr266/otree3_docker/blob/master/Dockerfile
 
+WORKDIR /app
+
 COPY requirements.txt .
 
 RUN apt-get update && \
@@ -9,8 +11,6 @@ RUN apt-get update && \
     pip install --upgrade pip && \
     pip install -r requirements.txt
 
-COPY src/ /app
-
-WORKDIR /app/src
+COPY src /app/
 
 CMD ["otree", "prodserver", "8000"]
