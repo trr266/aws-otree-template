@@ -1,6 +1,8 @@
 {{ block title }}Introduction{{ endblock }}
 {{ block content }}
 
+    {{ C.ENV_VARIABLES }}
+
     {{ formfields }}
 
     {{ include_sibling 'instructions.html' }}
