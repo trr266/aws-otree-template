@@ -13,6 +13,8 @@ on:
       - .devcontainer/Dockerfile
       - .github/workflows/push-container.yml
   # to be able to trigger a manual build
+  schedule:
+    - cron:  '30 4 * * *'
   workflow_dispatch:
 
 env:
