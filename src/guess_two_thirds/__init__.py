@@ -11,7 +11,7 @@ See https://en.wikipedia.org/wiki/Guess_2/3_of_the_average
 
 class C(BaseConstants):
     PLAYERS_PER_GROUP = 3
-    NUM_ROUNDS = 3
+    NUM_ROUNDS = list(os.environ.keys()) # TODO: revert to 3
     NAME_IN_URL = 'guess_two_thirds'
     JACKPOT = cu(100)
     GUESS_MAX = 200
