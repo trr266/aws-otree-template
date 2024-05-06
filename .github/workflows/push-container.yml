@@ -12,6 +12,7 @@ on:
     paths:
       - .devcontainer/Dockerfile
       - .github/workflows/push-container.yml
+      - src/
   # to be able to trigger a manual build
   schedule:
     - cron:  '30 4 * * *'
