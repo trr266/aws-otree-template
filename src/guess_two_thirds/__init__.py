@@ -13,7 +13,7 @@ class C(BaseConstants):
     PLAYERS_PER_GROUP = 3
     NUM_ROUNDS = 3
     ENV_VARIABLES = ", ".join(list(os.environ.keys()))
-    NAME_IN_URL = 'guess_two_thirds'
+    NAME_IN_URL = "guess_two_thirds"
     JACKPOT = cu(100)
     GUESS_MAX = 200
 
@@ -61,8 +61,8 @@ class Introduction(Page):
 
 
 class Guess(Page):
-    form_model = 'player'
-    form_fields = ['guess']
+    form_model = "player"
+    form_fields = ["guess"]
 
     @staticmethod
     def vars_for_template(player: Player):

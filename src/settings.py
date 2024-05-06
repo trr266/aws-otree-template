@@ -5,9 +5,9 @@ from os import environ
 
 SESSION_CONFIGS = [
     dict(
-        name='guess_two_thirds',
+        name="guess_two_thirds",
         display_name="Guess 2/3 of the Average",
-        app_sequence=['guess_two_thirds'],
+        app_sequence=["guess_two_thirds"],
         num_demo_participants=3,
     ),
 ]
@@ -26,30 +26,30 @@ SESSION_FIELDS = []
 
 # ISO-639 code
 # for example: de, fr, ja, ko, zh-hans
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = "en"
 
 # e.g. EUR, GBP, CNY, JPY
-REAL_WORLD_CURRENCY_CODE = 'USD'
+REAL_WORLD_CURRENCY_CODE = "USD"
 USE_POINTS = True
 
 ROOMS = [
     dict(
-        name='econ101',
-        display_name='Econ 101 class',
-        participant_label_file='_rooms/econ101.txt',
+        name="econ101",
+        display_name="Econ 101 class",
+        participant_label_file="_rooms/econ101.txt",
     ),
-    dict(name='live_demo', display_name='Room for live demo (no participant labels)'),
+    dict(name="live_demo", display_name="Room for live demo (no participant labels)"),
 ]
 
-ADMIN_USERNAME = 'admin'
+ADMIN_USERNAME = "admin"
 # for security, best to set admin password in an environment variable
-ADMIN_PASSWORD = environ.get('OTREE_ADMIN_PASSWORD')
+ADMIN_PASSWORD = environ.get("OTREE_ADMIN_PASSWORD")
 
 DEMO_PAGE_INTRO_HTML = """
 Here are some oTree games.
 """
 
 
-SECRET_KEY = '{{ secret_key }}'
+SECRET_KEY = "{{ secret_key }}"
 
-INSTALLED_APPS = ['otree']
+INSTALLED_APPS = ["otree"]
