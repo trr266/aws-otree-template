@@ -4,7 +4,7 @@ Template for deploying oTree to AWS
 
 ## Acknowledgements
 
-Uses template code from https://github.com/oTree-org/oTree, uses oTree.
+Uses template code from <https://github.com/oTree-org/oTree>, uses oTree.
 
 ## Contributors
 

@@ -55,3 +55,4 @@ jobs:
           VALIDATE_JSON: false
           VALIDATE_PYTHON_FLAKE8: false
           VALIDATE_PYTHON_MYPY: false
+          VALIDATE_PYTHON_PYLINT: false
