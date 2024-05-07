@@ -1,5 +1,6 @@
-from otree.api import *
 import os
+
+from otree.api import *
 
 doc = """
 a.k.a. Keynesian beauty contest.

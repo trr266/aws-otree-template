@@ -2,7 +2,6 @@
 
 from os import environ
 
-
 SESSION_CONFIGS = [
     dict(
         name="guess_two_thirds",

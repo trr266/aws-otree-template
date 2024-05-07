@@ -1,4 +1,7 @@
-from otree.api import Currency as c, currency_range, expect, Bot, SubmissionMustFail
+from otree.api import Bot
+from otree.api import Currency as c
+from otree.api import SubmissionMustFail, currency_range, expect
+
 from . import *
 
 
