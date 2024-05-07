@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 # This is based on https://github.com/trr266/otree3_docker/blob/master/Dockerfile
 
