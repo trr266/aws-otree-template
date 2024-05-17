@@ -1,6 +1,9 @@
 # Demo settings.py, Source: https://github.com/oTree-org/oTree/blob/lite/settings.py
 
 from os import environ
+import os
+from sqlalchemy import create_engine
+import psycopg2
 
 SESSION_CONFIGS = [
     dict(
@@ -42,10 +45,23 @@ ROOMS = [
 
 ADMIN_USERNAME = "admin"
 # for security, best to set admin password in an environment variable
-ADMIN_PASSWORD = environ.get("OTREE_ADMIN_PASSWORD")
+ADMIN_PASSWORD = environ.get('OTREE_ADMIN_PASSWORD', "admin123")
 
-DEMO_PAGE_INTRO_HTML = """
+try:
+    engine = create_engine(
+            os.getenv('__DATABASE_URL', f'postgres:///db.sqlite3'),
+        )
+    engine.connect()
+except Exception as e:
+    engine = e
+    pass
+
+
+DEMO_PAGE_INTRO_HTML = f"""
 Here are some oTree games.
+
+{engine}
+
 """
 
 
