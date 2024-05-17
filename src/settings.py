@@ -1,9 +1,8 @@
 # Demo settings.py, Source: https://github.com/oTree-org/oTree/blob/lite/settings.py
 
 from os import environ
-import os
 from sqlalchemy import create_engine
-import psycopg2
+import os
 
 SESSION_CONFIGS = [
     dict(
