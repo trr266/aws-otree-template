@@ -45,6 +45,7 @@ ROOMS = [
 ADMIN_USERNAME = "admin"
 # for security, best to set admin password in an environment variable
 ADMIN_PASSWORD = environ.get('OTREE_ADMIN_PASSWORD', "admin123")
+DEPLOYMENT_TIMESTAMP = environ.get("DEPLOYMENT_TIMESTAMP", "")
 
 try:
     engine = create_engine(
@@ -57,8 +58,9 @@ except Exception as e:
 
 
 DEMO_PAGE_INTRO_HTML = f"""
-Here are some oTree games.
+This site was deployed at {DEPLOYMENT_TIMESTAMP} 
 
+DB Engine Debug:
 {engine}
 
 """
