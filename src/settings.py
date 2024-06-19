@@ -48,8 +48,9 @@ ADMIN_PASSWORD = environ.get('OTREE_ADMIN_PASSWORD', "admin123")
 DEPLOYMENT_TIMESTAMP = environ.get("DEPLOYMENT_TIMESTAMP", "")
 
 try:
+    db_url = os.getenv('__DATABASE_URL', f'postgres:///db.sqlite3')
     engine = create_engine(
-            os.getenv('__DATABASE_URL', f'postgres:///db.sqlite3'),
+            db_url,
         )
     engine.connect()
 except Exception as e:
@@ -58,9 +59,16 @@ except Exception as e:
 
 
 DEMO_PAGE_INTRO_HTML = f"""
-This site was deployed at {DEPLOYMENT_TIMESTAMP} 
+This site was deployed at {DEPLOYMENT_TIMESTAMP}. 
+
+
+The database URL is:
+
+{db_url}
+
 
 DB Engine Debug:
+
 {engine}
 
 """
