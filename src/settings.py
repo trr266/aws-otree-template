@@ -61,12 +61,6 @@ except Exception as e:
 DEMO_PAGE_INTRO_HTML = f"""
 This site was deployed at {DEPLOYMENT_TIMESTAMP}. 
 
-
-The database URL is:
-
-{db_url}
-
-
 DB Engine Debug:
 
 {engine}
