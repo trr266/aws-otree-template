@@ -7,9 +7,10 @@ WORKDIR /app
 COPY requirements.txt .
 
 RUN apt-get update && \
-    apt-get install -y git && \
-    pip install --upgrade pip && \
-    pip install -r requirements.txt
+    apt-get install -y git curl && \
+    curl -LsSf https://astral.sh/uv/install.sh | sh && \
+    source $HOME/.local/bin/env && \
+    uv pip install -r requirements.txt --system
 
 COPY src /app/
 
