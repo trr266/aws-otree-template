@@ -44,14 +44,14 @@ ROOMS = [
 
 ADMIN_USERNAME = "admin"
 # for security, best to set admin password in an environment variable
-ADMIN_PASSWORD = environ.get('OTREE_ADMIN_PASSWORD', "admin123")
+ADMIN_PASSWORD = environ.get("OTREE_ADMIN_PASSWORD", "admin123")
 DEPLOYMENT_TIMESTAMP = environ.get("DEPLOYMENT_TIMESTAMP", "")
 
 try:
-    db_url = os.getenv('__DATABASE_URL', f'postgres:///db.sqlite3')
+    db_url = os.getenv("__DATABASE_URL", f"postgres:///db.sqlite3")
     engine = create_engine(
-            db_url,
-        )
+        db_url,
+    )
     engine.connect()
 except Exception as e:
     engine = e
